@@ -24,14 +24,14 @@ import javax.persistence.Id;
  */
 @Entity
 public class Produto {
-
+    @Id
+    @GeneratedValue
     private Long id;
 
     private String nome;
     private String descricao;
 
-    @Id
-    @GeneratedValue
+
     public Long getId() {
         return id;
     }
