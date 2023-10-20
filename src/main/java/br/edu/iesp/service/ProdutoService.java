@@ -3,11 +3,10 @@ package br.edu.iesp.service;
 
 import br.edu.iesp.model.Produto;
 import br.edu.iesp.repository.ProdutoRepository;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
 import java.util.List;
-import java.util.Objects;
 
 @ApplicationScoped
 public class ProdutoService {

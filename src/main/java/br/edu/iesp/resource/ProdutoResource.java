@@ -2,11 +2,11 @@ package br.edu.iesp.resource;
 
 import br.edu.iesp.model.Produto;
 import br.edu.iesp.service.ProdutoService;
+import jakarta.inject.Inject;
+import jakarta.ws.rs.*;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
 
-import javax.inject.Inject;
-import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
 import java.util.List;
 
 @Path("/produto")
