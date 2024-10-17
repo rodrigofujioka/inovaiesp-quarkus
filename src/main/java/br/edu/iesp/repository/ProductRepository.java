@@ -1,2 +1,9 @@
-package br.edu.iesp.repository;public class ProductRepository {
+package br.edu.iesp.repository;
+
+import br.edu.iesp.entity.Product;
+import io.quarkus.hibernate.orm.panache.PanacheRepository;
+import jakarta.enterprise.context.ApplicationScoped;
+
+@ApplicationScoped
+public class ProductRepository implements PanacheRepository<Product> {
 }
