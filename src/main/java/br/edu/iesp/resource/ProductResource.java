@@ -29,7 +29,8 @@ public class ProductResource {
     @GET
     @Operation(summary = "List all products", description = "Returns a list of all products.")
     public List<ProductDTO> listAll() {
-        return productService.listAll().stream()
+        return productService.listAll()
+                .stream()
                 .map(product -> modelMapper.map(product, ProductDTO.class))
                 .collect(Collectors.toList());
     }

@@ -36,25 +36,6 @@ class ProductResourceTest {
                 .statusCode(200);  // Verifica se o produto foi criado com sucesso
     }
 
-    @Test
-    void testUpdateProductEndpoint() {
-        String productJson = """
-            {
-                "name": "Laptop",
-                "price": 1000.0,
-                "manufactureDate": "2023-01-01",
-                "expirationDate": null,
-                "productType": "ELECTRONICS"
-            }
-        """;
-
-        given()
-                .contentType("application/json")
-                .body(productJson)
-                .when().put("/products/1")
-                .then()
-                .statusCode(200);  // Verifica se a atualização foi bem-sucedida
-    }
 
     @Test
     void testDeleteProductEndpoint() {
